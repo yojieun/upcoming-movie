@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: black;
+    background-image: url("../images/soul-skyline-image_new2.png");
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    color: #545454;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 150%;
+    max-width: 1000px;
+}
+
+@media (max-width: 450px) {
+    body {
+        background-image: url("../images/soul-skyline-image_mobile2.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    background-position: top center;
+        background-size: 450px;
+    }
+}
+
+h1, h2, h3 {
+    color: #545454;
+    line-height: 1.15;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 600;
+}
+
+light {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+@media (min-width: 600px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    .container-video-grid {
+        display: grid;
+        grid-template-columns: 48% 4% 48%;
+        padding-top: 10px;
+    }
+}
+
+.information {
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 160px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px;
+    line-height: 150%;
+    max-width: 750px;
+}
+
+.content {
+    padding: 10px;
+}
+
+@media (min-width: 450px) {
+    .content {
+        padding-left: 20px;
+    }
+}
+
+/* TRAILER SECTION */
+.media {
+    background-color: whitesmoke;
+    margin: 0 auto;
+    margin-bottom: 130px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 30px;
+    line-height: 150%;
+    max-width: 750px;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.video:hover .image {
+  opacity: 0.6;
+}
+
+.video:hover .middle {
+  opacity: 1;
+}
+
+.fa {
+font-size: 80px;
+color: whitesmoke;
+}
